@@ -1,0 +1,36 @@
+{
+  "name": "nodebb-plugin-quiz",
+  "version": "1.0.1",
+  "description": "Allows admin to create quizzes for users",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shyammaurya1/nodebb-plugin-quiz"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "quiz",
+    "mcq",
+    "test"
+ 
+  ],
+  "author": {
+    "name": "shyam maurya",
+    "email": "shyammaurya395@gmail.com"
+  },
+  "nbbpm": {
+    "compatibility": "^1.14.1"
+  },
+  "dependencies": {
+    "async": "3.2.0",
+    "mkdirp": "1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  },
+  "license": "MIT License",
+  "readmeFilename": "README.md"
+}

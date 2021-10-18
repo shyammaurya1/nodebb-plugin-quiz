@@ -1,0 +1,29 @@
+{
+	"id": "nodebb-plugin-quiz",
+	"name": "quiz plugin",
+	"description": "Allows you to add questions and options for MCQs",
+	"url": "https://github.com/shyammaurya1/nodebb-plugin-quiz",
+	"library": "./library.js",
+	"less": "./static/lib/page.less",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:widgets.getAreas", "method": "setWidgetAreas"
+		}
+	],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"acpLess": [
+		"static/admin.less"
+	],
+	"acpScripts": [
+		"static/lib/admin.js"
+	],
+	"templates": "./templates"
+}
